@@ -1,0 +1,19 @@
+# Environment variables / secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Mac system files
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+
+# local Excel files
+*.xlsx
