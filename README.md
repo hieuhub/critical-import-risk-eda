@@ -55,7 +55,7 @@ The analysis uses U.S. import data for selected HS4-level critical product categ
 The final dashboard uses the latest available year in the dataset for supplier concentration and disruption exposure analysis.
 
 
-- Project Workflow
+## Project Workflow
 
 1. Data Collection
 	* Python scripts were used to pull monthly U.S. import data from the Census API for selected critical HS4 codes.
@@ -79,7 +79,7 @@ The final dashboard uses the latest available year in the dataset for supplier c
 		+ 30% and 50% disruption value-at-risk scenarios
 		+ final weighted risk score
 		+ Tableau-ready export view
-		4. Tableau Dashboard
+4. Tableau Dashboard
 
 The final Tableau dashboard presents the analysis including: 
 
@@ -127,36 +127,6 @@ The final Tableau dashboard presents the analysis including:
 	* Expand the model with logistics, political stability, and port dependency indicators for deeper country risk analysis.
 
 
-
-## Repository Structure
-EDA/
-  README.md
-  src/
-    download_census_imports.py
-    clean_imports.py
-    download_census_imports_hs4.py
-    eda_01_overview.py
-    eda_02_supplier_concentration.py
-    eda_03_hs4_product_concentration.py
-    eda_04_disruption_scenario.py
-    eda_05_final_risk_ranking.py
-
-  sql/
-    01_create_imports_hs4_table.sql
-    02_load_imports_hs4.sql
-    03_validate_imports_hs4.sql
-    04_supplier_concentration_analysis.sql
-    05_disruption_scenario_analysis.sql
-    06_final_risk_ranking_view.sql
-    07_tableau_export_view.sql
-
-  data/
-    tableau_exports/
-      final_risk_ranking_tableau.csv
-
-  tableau/
-    screenshots/
-      final_dashboard.png
 
 
 
