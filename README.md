@@ -1,5 +1,8 @@
 # U.S Supply Chain Fragility & Critical Import Risk Analysis
 
+<p align="center">
+  <img src="tableau/screenshots/final_dashboard.png" alt="U.S. Critical Import Risk Dashboard" width="900">
+</p>
 
 ## Summary
 
@@ -57,6 +60,16 @@ The final dashboard uses the latest available year in the dataset for supplier c
 
 ## Project Workflow
 
+```mermaid
+flowchart LR
+    A[U.S. Census Trade API] --> B[Python Data Extraction]
+    B --> C[Data Cleaning & Validation]
+    C --> D[PostgreSQL Database]
+    D --> E[SQL Analysis Views]
+    E --> F[Tableau Public Dashboard]
+    F --> G[Business Recommendations]
+```
+
 1. Data Collection
 	* Python scripts were used to pull monthly U.S. import data from the Census API for selected critical HS4 codes.
 
@@ -82,7 +95,7 @@ The final dashboard uses the latest available year in the dataset for supplier c
 4. Tableau Dashboard
 
 	* The final Tableau dashboard presents the analysis including: 
-	
+
 		+ total critical import value
 		+ 30% and 50% supplier disruption exposure
 		+ high-priority product count
