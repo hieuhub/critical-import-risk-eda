@@ -1,5 +1,9 @@
 # U.S Supply Chain Fragility & Critical Import Risk Analysis
 
+## Dashboard
+
+[View Interactive Tableau Dashboard](https://public.tableau.com/views/U_S_SupplyChainFragilityCriticalImportRiskAnalysis/U_S_CriticalImportRiskDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 <p align="center">
   <img src="tableau/screenshots/final_dashboard.png" alt="U.S. Critical Import Risk Dashboard" width="900">
 </p>
