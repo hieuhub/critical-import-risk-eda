@@ -1,18 +1,21 @@
-U.S Supply Chain Fragility & Critical Import Risk Analysis
+# U.S Supply Chain Fragility & Critical Import Risk Analysis
 
 
-- Overview
+## Summary
 
-This project analyzes U.S. critical import exposure across selected HS4 product categories and identifies where supplier-country disruption could create the largest business risk.
+This project analyzes U.S. critical import exposure across selected HS4 product categories and identifies where supplier-country disruption could create the largest supply chain risk.
 
-The analysis focuses on a practical supply chain question:
+The analysis estimates supplier concentration, disruption value at risk, and diversification priority for critical product categories such as computers, computer parts, auto parts, integrated circuits, telecom equipment, batteries, medical instruments, pharmaceuticals, and critical metals.
 
-If a top supplier country is disrupted, how much import value is exposed, and which product categories should be prioritized for diversification?
+The final output is an executive Tableau dashboard supported by a Python data pipeline, PostgreSQL analysis views, and a documented risk scoring model.
 
-The final deliverable is an executive Tableau dashboard supported by a Python data pipeline, PostgreSQL analysis views, and a risk scoring model.
+## Business Question
+
+If a top supplier country is disrupted, how much import value is exposed, and which critical product categories should be prioritized for supplier diversification?
 
 
-- Business Context
+
+## Business Context
 
 Critical goods such as computers, semiconductors, telecom equipment, batteries, auto parts, medical instruments, pharmaceuticals, and key metals are often dependent on a small group of supplier countries.
 
@@ -25,7 +28,7 @@ This project estimates that risk by combining three signals:
 * supplier concentration
 
 
-- Tool used: 
+## Tool used: 
 	* Python: Census API extraction, data cleaning, validation, and initial EDA
 	* Pandas: data transformation and CSV output generation
 	* PostgreSQL: structured analytics layer
@@ -34,7 +37,7 @@ This project estimates that risk by combining three signals:
 	* Git/GitHub: version control and project documentation
 
 
-- Data Source
+## Data Source
 
 The data comes from the U.S. Census International Trade API.
 
@@ -89,7 +92,7 @@ The final Tableau dashboard presents the analysis including:
 		+ top 10 diversification priority ranking
 
 
-- Metrics
+## Metrics
 	* Total Import Value: Total annual U.S. import value for each selected HS4 product category.
 
 	* Top Supplier Share: Top Supplier Share = Top Supplier Import Value / Total Product Import Value
@@ -108,7 +111,7 @@ The final Tableau dashboard presents the analysis including:
 			Note: The weighting gives the highest importance to direct disruption exposure, followed by supplier dependency and overall import size.
 
 
-- Key Findings
+## Key Findings
 	* Computer/data processing machines, computer parts, and auto parts showed the highest estimated 30% disruption exposure.
 	* Mexico and Taiwan represented the largest supplier-country exposure across the selected critical product categories.
 	* Some products with lower total import value still showed high supplier concentration, making them important diversification candidates.
@@ -116,7 +119,7 @@ The final Tableau dashboard presents the analysis including:
 
 
 
-- Business Actions after Findings:
+## Business Actions after Findings:
 	* Prioritize diversification for the highest-ranked critical product categories.
 	* Monitor products where top supplier share exceeds 30% and 50%.
 	* Develop alternative sourcing strategies for products with both high import value and high supplier concentration.
@@ -125,7 +128,7 @@ The final Tableau dashboard presents the analysis including:
 
 
 
-- Repository Structure
+## Repository Structure
 EDA/
   README.md
   src/
@@ -155,6 +158,5 @@ EDA/
     screenshots/
       final_dashboard.png
 
-  reports/
 
 
