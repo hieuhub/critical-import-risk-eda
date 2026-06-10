@@ -81,8 +81,8 @@ The final dashboard uses the latest available year in the dataset for supplier c
 		+ Tableau-ready export view
 4. Tableau Dashboard
 
-The final Tableau dashboard presents the analysis including: 
-
+	* The final Tableau dashboard presents the analysis including: 
+	
 		+ total critical import value
 		+ 30% and 50% supplier disruption exposure
 		+ high-priority product count
